@@ -16,6 +16,7 @@ public class Main {
         wa = "081527676935";
         hobi = "Main Game";
         
+        //ini adalah fungsi pengguanan println
         System.out.println("------------- Biodata -------------");
         System.out.println("Nama   : " + nama);
         System.out.println("NIM    : " + NIM);
@@ -25,6 +26,29 @@ public class Main {
         System.out.println("Tinggi : " + tinggi);
         System.out.println("NO WA  : " + wa);
         System.out.println("Hobi   : " + hobi);
-    
+        
+        System.out.println("\n");
+        //ini adalah fungsi penggunaan print
+        System.out.print("------------- Biodata -------------");
+        System.out.print("Nama   : " + nama);
+        System.out.print("NIM    : " + NIM);
+        System.out.print("Alamat : " + alamat);
+        System.out.print("Alumni : " + alumni);
+        System.out.print("Umur   : " + umur + " tahun");
+        System.out.print("Tinggi : " + tinggi);
+        System.out.print("NO WA  : " + wa);
+        System.out.print("Hobi   : " + hobi);
+        
+        System.out.println("\n");
+        //ini adalah fungsi penggunaan printf
+        System.out.printf("------------- Biodata -------------");
+        System.out.printf("Nama   : " + nama);
+        System.out.printf("NIM    : " + NIM);
+        System.out.printf("Alamat : " + alamat);
+        System.out.printf("Alumni : " + alumni);
+        System.out.printf("Umur   : " + umur + " tahun");
+        System.out.printf("Tinggi : " + tinggi);
+        System.out.printf("NO WA  : " + wa);
+        System.out.printf("Hobi   : " + hobi);
     }
 }
