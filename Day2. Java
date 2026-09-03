@@ -1,0 +1,30 @@
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("INI ADALAH BIODATA DIRI SENDIRI");
+
+        System.out.println("\n");
+        String nama, NIM, alamat, alumni,wa,hobi;
+        int umur;
+        Double tinggi;
+        
+        nama = "AKBAR";
+        NIM = "D0226337";
+        alamat = "MAJENE, LINGKUNGAN SIMULLU";
+        alumni = "UPTD SMKN 1 MAJENE";
+        umur = 18 ;
+        tinggi = 165.5;
+        wa = "081527676935";
+        hobi = "Main Game";
+        
+        System.out.println("------------- Biodata -------------");
+        System.out.println("Nama   : " + nama);
+        System.out.println("NIM    : " + NIM);
+        System.out.println("Alamat : " + alamat);
+        System.out.println("Alumni : " + alumni);
+        System.out.println("Umur   : " + umur + " tahun");
+        System.out.println("Tinggi : " + tinggi);
+        System.out.println("NO WA  : " + wa);
+        System.out.println("Hobi   : " + hobi);
+    
+    }
+}
