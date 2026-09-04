@@ -1,0 +1,21 @@
+public class Main {
+    public static void main(String[] args) {
+        
+        System.out.println("---------- Escape Sequence ----------\n");
+        
+        //Newline (\n)
+        System.out.println("1. Newline (\\n):berfungsi memberikan sebuah baris baru\ncontoh:\nBaris pertama\nBaris kedua\n");
+        
+        //Tab (\b)
+        System.out.println("2. Tab (\\t):berfungsi memberikan jarak tab horizontal\ncontoh:\nNama\t:Akbar\nUmur\t:18\n");
+        
+        //Tanda Kutip (\")
+        System.out.println("3. Kutip (\\\"):berfungsi memberikan sebuah tanda kutip (\"p\")\ncontoh:\nDia berkata, \"Halo!\"\n");
+        
+        //Backslash (\\)
+        System.out.println("4. Backslash (\\\\):memberikan sebuah tanda backslash (\\)\ncontoh:\nC:\\Users\\Documents\\file.txt\n");
+        
+        //Backspace (\b)
+        System.out.println("6. Backspace (\\b):berfungsi menghapus 1 karakter sebelumnya\ncontoh:\ndari :HelloWorld ----> Hello\bWorld\n");
+    }
+}
