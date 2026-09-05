@@ -1,0 +1,30 @@
+public class Main {
+    public static void main(String[] args) {
+        
+    System.out.println ("-----Data Numerik Bilangan Bulat-----");
+    System.out.println("\n");
+        byte usia=18;
+        short suhu=-110;
+        int populasi =257900000;
+        long jarak=350730000L;
+        
+        //ini adalah fungsi dari Byte
+        System.out.println("1. Byte\nByte cocok digunakan untuk data Biner dengan rentang angka -128->127 ") ;
+        System.out.println("Contoh:\nusia saya adalah: " +usia);
+        
+        //ini adalah fungsi dari Short
+        System.out.println("\n");
+        System.out.println("2. Short\nShort adalah salah satu syntax atau perintah yang jarang digunakan short memiliki rentan angka -32.768->32.767") ;
+        System.out.println("Contoh:\nsuhu dalam ruangan ini adalah: " +suhu);
+        
+        //ini adalah fungsi dari Int
+        System.out.println("\n");
+        System.out.println("1. Int\nInt adalah syntax yang umum digunakan dengan rentan angka kurang lebih 2 miliar angka") ;
+        System.out.println("Contoh:\nPopulasi hewan dalam ekosistem ini adalah: " +populasi);
+        
+        //ini adalah fungsi dari Long
+        System.out.println("\n");
+        System.out.println("1. Long\nLong adalah syntax yang membutuhkan angka yang sangat besar yaitu berkisar sampai kurang lebih 9,2 miliar. pada tipe data long biasanya menggunakan sebuah huruf di akhir (L)") ;
+        System.out.println("Contoh:\njarak dari dari rumah ke unslbar adalah : " +jarak + " M");
+    }
+}
