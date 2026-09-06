@@ -1,0 +1,13 @@
+public class Main {
+    public static void main(String[] args) {
+        
+    System.out.println ("---------Data Pecahan---------");
+    System.out.println("\n");
+        double Kain = 12.0;
+        float tinggi = 165.5f;
+        
+        System.out.print("Panjang kain ini adalah :" + Kain + " meter");
+        System.out.print("\n");
+        System.out.print("tinggi badan saya adalah :"+ tinggi);
+    }
+}
