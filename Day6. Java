@@ -1,0 +1,36 @@
+public class Main {
+    public static void main(String[] args) {
+        // ini berfungsi sebagai pengimputan nilai
+        double kehadiran = 90;
+        double tugas = 80;
+        double uts = 75;
+        double uas = 85;
+        
+        double N = kehadiran*0.20 + tugas*0.20 + uts*0.30 + uas*0.30;
+        //ini adalah char dan bolean 
+        char G;
+        boolean L;
+        
+        if (N >= 85) {
+            G = 'A';
+            L = true;
+        } else if (N >= 70) {
+            G = 'B';
+            L = true ;
+        } else if (N >= 55) {
+            G = 'C';
+            L = true;
+        } else if (N >= 40) {
+            G = 'D';
+            L = false;
+        } else {
+            G = 'E';
+            L = false;
+        }
+        System.out.println("Ini Adalah Nilai Akhir Mahasiswa");
+        System.out.println("\n");
+        System.out.println("Nilai Akhir\t: " + N);
+        System.out.println("Grade\t\t: " + G);
+        System.out.println("Lulus\t\t: " + L);
+    }
+}
