@@ -1,0 +1,16 @@
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Pengenalan Tipe Data String");
+        String nama,alamat,alumni,wa;
+        nama = "Akbar";
+        alamat = "Lingk.Simullu";
+        alumni = "SMKN 1 Majene";
+        wa = "081527676935";
+        System.out.println("\n");
+        System.out.println("nama saya adalah \t:" + nama);
+        System.out.println("saya tinggal di \t:" + alamat);
+        System.out.println("saya alimni dari \t:" + alumni);
+        System.out.println("No Wa saya adalah \t:" + wa);
+        
+    }
+}
