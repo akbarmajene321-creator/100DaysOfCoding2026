@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+    System.out.println ("---------Pengenalan Scanner---------");
+    System.out.println("\n");
+        
+        System.out.print("Masukkan Teks :");
+        String angka = sc.nextLine();
+        
+    }
+}
