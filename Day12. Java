@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String nama;
+        String alamat;
+        String kelas;
+        int umur;
+        double tinggi;
+
+        System.out.println("--------------BIODATA--------------");
+        System.out.println("Masukkan Biodata Anda");
+
+        System.out.print("Masukkan nama anda   : ");
+        nama = sc.nextLine();
+
+        System.out.print("Masukkan umur anda   : ");
+        umur = sc.nextInt();
+
+        System.out.print("Masukkan tinggi anda : ");
+        tinggi = sc.nextDouble();
+        sc.nextLine(); 
+
+        System.out.print("Masukkan kelas anda  : ");
+        kelas = sc.nextLine();
+
+        System.out.print("Masukkan alamat anda : ");
+        alamat = sc.nextLine();
+
+        System.out.println("\n--------------HASIL--------------");
+        System.out.println("Nama   : " + nama);
+        System.out.println("Umur   : " + umur);
+        System.out.println("Tinggi : " + tinggi);
+        System.out.println("Kelas  : Informatika " + kelas);
+        System.out.println("Alamat : " + alamat);
+
+        sc.close();
+    }
+}
