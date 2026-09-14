@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String nama;
+        String Jenis;
+        long hp;
+        double berat;
+        int umur;
+        double tinggi;
+        
+        System.out.print("Masukkan Nama : ");
+        nama = sc.nextLine();
+        System.out.print("Masukkan Umur : ");
+        umur = sc.nextInt();
+        System.out.print("Masukkan Tinggi Badan : ");
+        tinggi = sc.nextDouble();
+        System.out.print("Masukkan Berat Badan : ");
+        berat = sc.nextDouble();
+        sc.nextLine();
+        System.out.print("Masukkan Jenis Kelamin : ");
+        Jenis = sc.nextLine();
+        System.out.print("Masukkan Nomor telpon : ");
+        hp = sc.nextLong();
+        
+        System.out.println("\n-----Biodata Saya-----");
+        System.out.println("Nama          : "+nama);
+        System.out.println("Umur          : "+umur);
+        System.out.println("Tinggi badan  : "+tinggi +(" Cm"));
+        System.out.println("Berat Badan   : "+berat +(" Kg"));
+        System.out.println("Jenis Kelamin : "+Jenis);
+        System.out.println("Nomor Telepon : "+("+62")+hp);
+        
+        sc.close();
+        
+    }
+}
