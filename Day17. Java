@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        
+        System.out.print("Masukkan nilai awal: ");
+        int x = input.nextInt(); 
+
+        System.out.println("Nilai awal x = " + x);
+        
+        System.out.print("Masukkan nilai kedua (+=): ");
+        int tambah = input.nextInt();
+        x += tambah ;
+        System.out.println("Setelah x += " + tambah + " -> x = " + x);
+        
+        System.out.print("Masukkan nilai ketiga (-=): ");
+        int kurang = input.nextInt();
+        x -= kurang; 
+        System.out.println("Setelah x -= " + kurang + " -> x = " + x);
+
+        System.out.print("Masukkan nilai keempat (*=): ");
+        int kali = input.nextInt();
+        x *= kali; 
+        System.out.println("Setelah x *= " + kali + " -> x = " + x);
+
+        System.out.print("Masukkan nilai kelima (:=): ");
+        int bagi = input.nextInt();
+        x /= bagi; 
+        System.out.println("Setelah x := " + bagi + " -> x = " + x);
+
+        input.close();
+    }
+}
