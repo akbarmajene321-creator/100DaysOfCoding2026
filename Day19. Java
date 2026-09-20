@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Masukkan double: ");
+        double a = input.nextDouble();
+        
+        System.out.print("Masukkan float: ");
+        float b = input.nextFloat();
+        
+        System.out.print("Masukkan long: ");
+        long c = input.nextLong();
+        
+        System.out.print("Masukkan int: ");
+        int d = input.nextInt();
+        
+        System.out.print("Masukkan short: ");
+        short e = input.nextShort();
+        
+        System.out.print("Masukkan byte: ");
+        byte f = input.nextByte();
+        
+        int   dariDouble = (int) a;      
+        int   dariFloat  = (int) b;      
+        int   dariLong   = (int) c;      
+        short dariInt    = (short) d;   
+        byte  dariShort  = (byte) e;    
+        int   dariChar   = (int) f;      
+        
+        System.out.println("double  -> int    : " + a + "  =>  " + dariDouble);
+        System.out.println("float   -> int    : " + b + "  =>  " + dariFloat);
+        System.out.println("long    -> int    : " + c + "   =>  " + dariLong);
+        System.out.println("int     -> short  : " + d + "    =>  " + dariInt);
+        System.out.println("short   -> byte   : " + e + "    =>  " + dariShort);
+        System.out.println("char    -> int    : " + f + "    =>  " + dariChar);
+        
+        input.close();
+    }
+}
