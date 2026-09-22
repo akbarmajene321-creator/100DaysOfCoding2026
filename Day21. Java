@@ -1,0 +1,32 @@
+public class Main {
+    public static void main(String[] args) {
+
+        String a = "10";
+        String b = "100";
+        String c = "1000";
+        String d = "100000";    
+        String e = "3.14";
+        String f = "15.5";
+        String g = "A";
+        String h = "true";
+
+        byte byteA       = Byte.parseByte(a);
+        short shortB     = Short.parseShort(b);
+        int intC         = Integer.parseInt(c);
+        long longD       = Long.parseLong(d);
+        float floatE     = Float.parseFloat(e);
+        double doubleF   = Double.parseDouble(f);
+        char charG       = g.charAt(0);              
+        boolean booleanH = Boolean.parseBoolean(h); 
+
+        System.out.println("Byte a = " + byteA);
+        System.out.println("Short b = " + shortB);
+        System.out.println("Int c = " + intC);
+        System.out.println("Long d = " + longD);
+        System.out.println("Float e = " + floatE);     
+        System.out.println("Double f = " + doubleF);   
+        System.out.println("Char g = " + charG);
+        System.out.println("Boolean h = " + booleanH);
+        
+    }
+}
