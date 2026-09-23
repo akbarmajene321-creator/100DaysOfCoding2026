@@ -1,0 +1,26 @@
+
+import java.util.Scanner;
+
+ public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("masukkan nilai A :");
+        int nilaiA = sc.nextInt();
+        System.out.print("masukkan nilai B :");
+        int nilaiB = sc.nextInt();
+        
+        System.out.println("\n=== nilai sebelum di tukar ===");
+        System.out.println("nilai A = " + nilaiA);
+        System.out.println("nilai B = " + nilaiB);
+        
+        int temp = nilaiA ;
+        nilaiA = nilaiB;
+        nilaiB = temp;
+        
+        System.out.println("\n=== nilai setelah di tukar ===");
+        System.out.println("nilai A = " + nilaiA);
+        System.out.println("nilai B = " + nilaiB);
+        
+    }
+}
