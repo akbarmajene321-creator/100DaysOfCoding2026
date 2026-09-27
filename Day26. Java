@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("masukkan saldo anda :");
+        int Total = sc.nextInt();
+        System.out.print("masukkan uang yang di tarik :");
+        int Tarik = sc.nextInt();
+        
+        boolean A = (Total >= Tarik);
+        
+        if (A) {
+            System.out.println("\n======Penarikan Berhasil======");
+            System.out.println("Berhasil di tarik : " + ("Rp ")+Tarik);
+            int C = Tarik / 100000;
+            System.out.println("Rp 100            : "+ C + (" Lembar"));
+        } else {
+            System.out.println("\n======Penarikan Gagal======");
+            System.out.println("Saldo anda kurang" );
+            System.out.println("Gagal Tarik : " + Tarik );
+            System.out.println("Catatan     : silahkan Tambahkan saldo anda ");
+        }
+        
+    }
+}
