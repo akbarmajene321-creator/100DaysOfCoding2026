@@ -1,0 +1,11 @@
+public class Main {
+    public static void main(String[] args) {
+        
+        int A = 10 ;
+        int B = 20 ;
+        
+        System.out.println("Nilai A Lebih kecil atau sama dengan B = " + (A <= B));
+        System.out.println("Nilai B Lebih besar atau sama dengan A = " + (B >= A));
+        
+    }
+}
