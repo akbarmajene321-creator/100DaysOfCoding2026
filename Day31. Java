@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in); 
+        System.out.print("Masukkan umur anda : ");
+        int A = sc.nextInt();
+        boolean Adaktp = true;
+        boolean TidakAdaKtp = false;
+        
+        //ini adalah AND
+        // berfungsi ketika kedua nilai true
+        if (A >= 17 && Adaktp) {
+            System.out.println("\nDiperbolehkan Masuk");
+        } else {
+            System.out.println("\nTidak Diperbolehkan Masuk");
+        }
+        
+        //ini adalah OR
+        //betrfungsi mamberikan nilai true walau ada salah satu bernilai false
+        if (A >= 17 || Adaktp) {
+            System.out.println("\nDiperbolehkan Masuk");
+        } else {
+            System.out.println("\nTidak Diperbolehkan Masuk");
+        }
+        //ini adalah NOT
+        //berfungsi membalik nilai true menjadi false dan seblaiknya
+        if (A >= 17 &&! Adaktp) {
+            System.out.println("\nDiperbolehkan Masuk");
+        } else {
+            System.out.println("\nTidak Diperbolehkan Masuk");
+        }
+        
+        
+    }
+}
