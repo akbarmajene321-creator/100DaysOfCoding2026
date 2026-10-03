@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        // operator == dan !=
+        System.out.print("Masukkan Umur Budi : ");
+        int umur = sc.nextInt();
+        int umurmin = 17;
+        
+        boolean masuk = umur == umurmin;
+        boolean tidakmasuk = umur != 20;
+        
+        if (masuk) {
+            System.out.println("Budi boleh masuk ? \n" + masuk);
+        } else {
+            System.out.println("Apakah Budi berusia 20 ? \n" + tidakmasuk);
+        }
+        //operator >, <, >=,<=
+        System.out.print("masukkan tinggi budi : ");
+        int tinggi = sc.nextInt();
+        
+        boolean terlaluPendek = tinggi < 140;
+        boolean cukupTinggi   = tinggi > 140;
+        boolean tidakLebih    = tinggi <= 150;
+        boolean minimal       = tinggi >= 150;
+        
+        System.out.println("Terlalu pendek? \n" + terlaluPendek);       
+        System.out.println("Cukup tinggi? \n" + cukupTinggi);           
+        System.out.println("Tidak lebih dari 150? \n" + tidakLebih);   
+        System.out.println("Minimal 150? \n" + minimal);                
+        
+    }
+}
