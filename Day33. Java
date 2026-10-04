@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Masukkan angka umur anda : ");
+        int A = sc.nextInt();
+        boolean B = A >= 17 ;
+        
+        if (B) {
+            System.out.println("Umur anda telah mencukupi");
+        } else {
+            System.out.println("Umur anda tidak mencukupi ");
+        }
+        
+        
+    }
+}
