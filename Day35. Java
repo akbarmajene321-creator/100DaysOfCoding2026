@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Masukkan angka umur anda : ");
+        int A = sc.nextInt();
+        boolean B = A >= 17 ;
+        sc.nextLine();
+        
+        if (B) {
+            System.out.print("\nApakah Anda Memiliki KTP? ");
+            String C = sc.nextLine();
+            if (C.equals("Iya")) {
+                System.out.println("Silahkan Masuk");
+            }
+        } else {   
+            System.out.println("Anda dilarang masuk");
+        }
+    }
+}
