@@ -3,7 +3,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-        System.out.print("Masukkan angka umur anda : ");
+        System.out.print("Masukkan angka : ");
         int A = sc.nextInt();
         
         if (A % 2 == 0) {
