@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Masukkan angka : ");
+        int A = sc.nextInt();
+        
+        if (A == 0) {
+            System.out.print("\nBilangan Nol ");
+        } else if (A > 0) {   
+            System.out.println("\nPositif");
+        } else if (A < 0) {
+            System.out.println("\nNegatif");
+        }
+    }
+}
