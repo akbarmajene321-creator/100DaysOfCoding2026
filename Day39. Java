@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Masukkan Angka Pertama : ");
+        int A = sc.nextInt();
+        System.out.print("Masukkan Operator : ");
+        char B = sc.next().charAt(0);
+        System.out.print("Masukkan Angka Kedua : ");
+        int C = sc.nextInt();
+        
+        if (B == '+'){
+            System.out.println("\nhasil = " + A + C);
+        } else if (B == 'x'){
+            System.out.println("\nhasil = " + A * C);
+        } else if (B == '-'){
+            System.out.println("\nhasil = " + (A - C));
+        } else if (B == ':'){
+            System.out.println("\nhasil = " + A / C);
+        }
+    }
+}
