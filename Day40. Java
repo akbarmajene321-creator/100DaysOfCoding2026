@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Masukkan umur penonton: ");
+        int A = sc.nextInt();
+        System.out.print("Apakah anda mahasiswa ?");
+        boolean B = sc.nextBoolean();
+        
+        int C = 0;
+        
+        if (A < 12) {
+            C = 30000;
+        } else if (A >= 12 && A <= 18) {
+            C = 40000;
+        } else {
+            C = 50000;
+        }
+        
+        System.out.println("Harga tiket sebelum diskon: Rp " + C);
+        
+        if (B && A > 18) {
+            int D = C * 80 / 100;
+            System.out.println("Diskon mahasiswa 20%");
+            System.out.println("Total bayar: Rp " + D);
+        } else {
+            System.out.println("Total bayar: Rp " + C);
+        }
+    }
+}
