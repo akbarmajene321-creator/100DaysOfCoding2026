@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {                                                                            public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Masukkan nama :");
+    String a = sc.nextLine();
+    System.out.print("Masukkan Gaji: ");
+    int b = sc.nextInt();
+    int transport = 100000;
+    int makan = 150000;
+    int kesehatan = 100000;
+    
+    int c = b - transport - makan - kesehatan;
+    
+    System.out.println("=== Gaji ===");
+    System.out.println("Total Gaji  : Rp " + b);
+    System.out.println("Tranportasi : Rp 100.000");
+    System.out.println("Makan       : Rp 150.000");
+    System.out.println("Kesehatan   : Rp 100.000");
+    System.out.println("===Gaji Bersih===");
+    System.out.println("Rp " + c );
+     }
+}
