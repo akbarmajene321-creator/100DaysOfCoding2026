@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.print("Masukkan Nama: ");
+		String a = sc.nextLine();       
+		System.out.print("Masukkan umur: ");
+		int b = sc.nextInt();
+		
+		String c = (b >= 17) ? "Dewasa":"Anak-anak";
+		        System.out.println("Nama: " + a);
+		        System.out.println("Umur: " + b);
+		        System.out.println(c);
+    }
+}
