@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Masukkan Nilai N: ");
+        int N = sc.nextInt();
+        
+        System.out.println("\n=== Genap ===");
+        for (int a = 1; a <= N; a++) {
+            if (a%2==0)
+            System.out.print(a+" ");
+        }
+        System.out.println("\n\n=== Ganjil ===");
+        for (int a = 1; a <= N; a++) {
+            if (a%2!=0)
+            System.out.print(a+" ");
+        }
+    }
+}
