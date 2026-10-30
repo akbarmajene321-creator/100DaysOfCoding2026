@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Masukkan Nilai N: ");
+        int N = sc.nextInt();
+        
+        System.out.println("\nKelipatan 2");
+        for (int a = 1; a <= N; a++) {
+            if (a%2==0)
+            System.out.print(a+" ");
+        }
+        System.out.println("\n\nKelipatan 3");
+        for (int a = 1; a <= N; a++) {
+            if (a%3==0)
+            System.out.print(a+" ");
+        }
+        System.out.println("\n\nKelipatan 4");
+        for (int a = 1; a <= N; a++) {
+            if (a%4==0)
+            System.out.print(a+" ");
+        }        
+    }
+}
