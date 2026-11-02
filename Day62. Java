@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Masukkan pilihan : ");
+        int a = input.nextInt();
+        int i;
+        int j;
+        for (i = 0 ; i <= a; i++) {
+            for (j = 0 ; j <= i; j++) {
+                System.out.print("*");
+                
+            }
+            System.out.println();
+        }
+    }
+}
