@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Masukkan Kata: ");
+        String a = sc.nextLine();
+        
+        //Length()
+        System.out.println();
+        System.out.println(a.length());
+        System.out.println();
+        //ToUpperCase
+        System.out.println(a.toUpperCase( ));
+        System.out.println();
+        //ToLowerCase
+        System.out.println(a.toLowerCase());
+    }
+}
