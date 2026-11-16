@@ -1,0 +1,15 @@
+public class Main{
+    public static void main(String[] args) {
+        String input = "   Java Programming Language   ";
+        
+        String trimmed = input.trim();  
+        
+        String programming = trimmed.substring(5, 16); 
+        
+        String result = trimmed.replace("Programming", "Coding");
+        
+        System.out.println("Trim    : " + trimmed);
+        System.out.println("Substr  : " + programming);
+        System.out.println("Replace : " + result);
+    }
+}
