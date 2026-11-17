@@ -1,0 +1,99 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main{
+
+    static void demoMethodDasar() {
+        System.out.println("\n===== 1. DEMO METHOD DASAR =====");
+        String teks = "Belajar Java Programming";
+
+        System.out.println("String asli     : " + teks);
+        System.out.println("length()        : " + teks.length());
+        System.out.println("charAt(0)       : " + teks.charAt(0));
+        System.out.println("toUpperCase()   : " + teks.toUpperCase());
+        System.out.println("toLowerCase()   : " + teks.toLowerCase());
+        System.out.println("substring(0,7)  : " + teks.substring(0, 7));
+        System.out.println("indexOf('Java') : " + teks.indexOf("Java"));
+        System.out.println("contains('Java'): " + teks.contains("Java"));
+        System.out.println("startsWith('Bel'): " + teks.startsWith("Bel"));
+        System.out.println("endsWith('ing') : " + teks.endsWith("ing"));
+        System.out.println("replace         : " + teks.replace("Java", "Python"));
+        System.out.println("trim            : '" + "   Hello   ".trim() + "'");
+        System.out.println("isEmpty         : " + "".isEmpty());
+        System.out.println("join            : " + String.join("-", "2024", "01", "15"));
+        
+        String[] kata = teks.split(" ");
+        System.out.print("split(' ')      : ");
+        for (String k : kata) System.out.print("[" + k + "] ");
+        System.out.println();
+
+        
+        String a = "Java", b = "java";
+        System.out.println("equals          : " + a.equals(b));
+        System.out.println("equalsIgnoreCase: " + a.equalsIgnoreCase(b));
+    }
+
+    
+    static boolean isPalindrom(String str) {
+        String bersih = str.toLowerCase().replaceAll("[^a-z0-9]", "");
+        String balik = new StringBuilder(bersih).reverse().toString();
+        return bersih.equals(balik);
+    }
+
+    static String balikKata(String kalimat) {
+        String[] kata = kalimat.split(" ");
+        StringBuilder hasil = new StringBuilder();
+        for (int i = kata.length - 1; i >= 0; i--) {
+            hasil.append(kata[i]);
+            if (i > 0) hasil.append(" ");
+        }
+        return hasil.toString();
+    }
+
+    static void demoPalindromBalik() {
+        System.out.println("\n===== 2. PALINDROM & BALIK KATA =====");
+
+        String[] data = {"Katak", "Kasur ini rusak", "Hello", "A man a plan a canal Panama"};
+        for (String d : data) {
+            System.out.printf("%-30s -> %s%n", d, isPalindrom(d) ? "PALINDROM" : "BUKAN");
+        }
+
+        String kalimat = "Saya sedang belajar Java";
+        System.out.println("\nAsli   : " + kalimat);
+        System.out.println("Balik  : " + balikKata(kalimat));
+    }
+    
+    static void demoFrekuensiSensor() {
+        System.out.println("\n===== 3. FREKUENSI KARAKTER & SENSOR KATA =====");
+
+        
+        String teks = "programming";
+        Map<Character, Integer> freq = new HashMap<>();
+        for (char c : teks.toLowerCase().toCharArray()) {
+            freq.put(c, freq.getOrDefault(c, 0) + 1);
+        }
+        System.out.println("Teks : " + teks);
+        freq.forEach((k, v) -> System.out.println("  '" + k + "' = " + v));
+        
+        String kalimat = "Dasar bodoh, kamu memang bego!";
+        String[] kataKotor = {"bodoh", "bego"};
+        String hasil = kalimat;
+        for (String k : kataKotor) {
+            hasil = hasil.replaceAll("(?i)" + k, "*".repeat(k.length()));
+        }
+        System.out.println("\nAsli   : " + kalimat);
+        System.out.println("Sensor : " + hasil);
+    }
+    
+    public static void main(String[] args) {
+        System.out.println("==========================================");
+        System.out.println("   LATIHAN RINGKAS METHOD STRING JAVA     ");
+        System.out.println("==========================================");
+
+        demoMethodDasar();
+        demoPalindromBalik();
+        demoFrekuensiSensor();
+
+        System.out.println("\n===== SELESAI =====");
+    }
+}
