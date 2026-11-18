@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        String a, b;
+        System.out.print("Buat Username : ");
+        String user = input.nextLine();
+        System.out.print("Buat Password : ");
+        String pass = input.nextLine();
+        System.out.println("Akun berhasil dibuat!\n");
+        
+        do {
+            System.out.print("Username : ");
+            a = input.nextLine();
+            System.out.print("Password : ");
+            b = input.nextLine();
+            
+            if (!a.equals(user) || !b.equals(pass))
+                System.out.println("Salah! Coba lagi.\n");
+        } while (!a.equals(user) || !b.equals(pass));
+        
+        System.out.println("Login Berhasil! Selamat datang, " + user);
+        input.close();
+    }
+}
