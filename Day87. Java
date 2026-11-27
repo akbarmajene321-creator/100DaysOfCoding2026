@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner (System.in);
+        
+        System.out.print("Masukkan Jumlah Nilai: ");
+        int a = sc.nextInt();
+        
+        int b[] = new int[a];
+        int c = 0;
+        
+        for (int i  = 0 ; i < a; i++) {
+	        System.out.print("Masukkan Nilai Ke-"+(i+1)+": ");
+            b[i]= sc.nextInt();
+            c+=b[i];
+}       
+        int e = c/a;
+        System.out.println("Nilai total     : "+c);
+        System.out.println("Nilai Rata-Rata : "+e);
+    }
+}
