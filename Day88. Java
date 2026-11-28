@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+    static void luas(int p, int l) {
+        int hasil = p * l;
+        System.out.println("Luas persegi panjang: " + hasil);
+    }
+
+    static void keliling(int p, int l) {
+        int hasil = 2 * (p + l);
+        System.out.println("Keliling persegi panjang: " + hasil);
+    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Masukkan panjang: ");
+        int p = input.nextInt();
+
+        System.out.print("Masukkan lebar: ");
+        int l = input.nextInt();
+        luas(p, l);
+        keliling(p, l);
+
+        input.close();
+    }
+}
